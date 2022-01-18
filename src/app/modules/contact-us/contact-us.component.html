@@ -1,0 +1,24 @@
+<h1> Reactive Contact Form Example </h1>
+
+<form [formGroup]="contactForm" (submit)="onSubmit()">
+  <input type = "text" name="fullName" placeholder = "Your full name" formControlName="fullName" >
+  <br/>
+  
+  <input type = "text" name="email" placeholder = "Your email" formControlName="email" >
+  <br/>
+  
+  <textarea name = "message" placeholder = "Your message" formControlName="message" ></textarea>
+  <br/>
+  <input type = "submit" value = "Send">
+</form>
+
+
+ <!-- <form class="contact-form" (submit)="sendEmail($event)">
+    <label>Name</label>
+    <input type="text" name="user_name">
+    <label>Email</label>
+    <input type="text" name="user_email">
+    <label>Message</label>
+    <textarea name="message"></textarea>
+    <input type="submit" value="Send">
+</form> -->
