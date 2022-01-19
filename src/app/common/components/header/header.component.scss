@@ -1,17 +1,121 @@
-.marginIcon {
-    margin-left: 80px;
-    .icon {
-        padding-left: 10px;
+.tc-w{
+    color: #fff;
+}
+.bg-w{
+    background-color: #fff;
+}
+// .marginIcon {
+//     margin-left: 80px;
+//     i{
+//         color: #fff;
+//     }
+//     .icon {
+//         padding-left: 10px;
+//         color: #fff;
+//     }
+// }
+.quick{
+    background-color: black;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    .quick-info{
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        a{
+            text-decoration: none;
+            i{
+                color: #fff;
+                padding-right: 5px;
+            }
+            span{
+                color:#fff;
+            }
+        }
+
+    }
+}
+.nav-head{
+    position: fixed;
+    width: 100%;
+    top: 65px;
+    z-index: 999;
+    .navbar-brand{
+        width: 35%;
+        display: flex;
+        justify-content: center;
+    }
+    ul{
+        display: flex;
+        margin-left: 60px;
+        li a{
+            color:#fff;
+        }
     }
 }
 
-.second {
-    margin-top: 55px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+// .second {
+//     margin-top: 3.438rem;
+//     justify-content: center;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
     // background-color: #ffdd00;
-}
-
+//     .quick{
+//         display: flex;
+//         justify-content: space-between;
+//         width: 70%;
+//     }
+// }
+// .head-items{
+//     li{
+//         a{
+//             color: #fff;
+//         }
+//     }
+// }
 .navbar-inverse {
     background-color: #ffdd00;
 }
+//-------------------media-queries--------------//
+@media (min-width: 768px) and (max-width: 991.98px){
+    .nav-head{
+        top: 100px;
+        ul{
+            li a{
+                color: #000;
+            }
+        }
+    }
+    .navbar-collapse{
+        background-color: #fff;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .nav-head{
+        top: 170px;
+        left: 15px;
+        ul{
+            margin-left: 20px;
+            li a{
+                color: #000;
+            }
+        }
+    }
+    .navbar-collapse{
+        background-color: #fff;
+    }
+ }
+ @media (max-width: 575.98px){
+    .nav-head{
+        top: 170px;
+        left: 5px;
+        ul li a{
+            color: #000;
+        }
+    }
+    .navbar-collapse{
+        background-color: #fff;
+    }
+ }
