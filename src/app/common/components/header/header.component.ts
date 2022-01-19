@@ -9,14 +9,15 @@ import { Location, LocationStrategy, PathLocationStrategy } from '@angular/commo
 export class HeaderComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
+
   onWindowScroll() {
-    let element = document.querySelector('.second') as HTMLElement;
-    if (window.pageYOffset > element.clientHeight) {
-      element.classList.add('navbar-inverse');
-    } else {
-      element.classList.remove('navbar-inverse');
+      let element = document.querySelector('.bhavani') as HTMLElement;
+      if (window.pageYOffset > element.clientHeight) {
+        element.classList.add('navbar-inverse');
+      } else {
+        element.classList.remove('navbar-inverse');
+      }
     }
-  }
   // private toggleButton: any;
   // private sidebarVisible: boolean;
 
