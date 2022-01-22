@@ -13,3 +13,13 @@ img {
 .footer2 {
     padding-left: 40%;
 }
+.quick-foot{
+    width: 94%;
+    margin-left: auto;
+}
+
+@media (max-width: 575.98px){ 
+ .footer-links{
+     display: block !important;
+ }
+}

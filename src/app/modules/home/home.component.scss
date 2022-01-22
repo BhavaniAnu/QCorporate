@@ -13,11 +13,40 @@ b {
 }
 
 .about {
-    margin-top: 20px;
+    margin-top: 1.25rem;
+}
+.service{
+    .card {
+        min-height: 18.75rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: table;
+    }
+    .card-body{
+        display: table-cell;
+        vertical-align: middle;
+    }
 }
 
-.card {
-    min-height: 300px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
+//-------------------media-queries--------------//
+ @media (max-width: 575.98px){
+    .about-us{
+      position: relative;
+      top: 6.25rem;  
+    }
+    
+ }
+ @media (min-width: 320px) and (max-width:480px){
+     .service{
+         margin-top: 10px;
+     }
+     .nav-head{
+        left: 11px;
+     }
+    .home-properties{
+        padding: 5px 0px !important;
+    }
+ }
+
+
