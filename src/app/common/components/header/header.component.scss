@@ -76,8 +76,9 @@
 //     }
 // }
 .navbar-inverse {
-    background-color: #ffdd00;
+    background-color: #ffdd00 !important;
 }
+
 //-------------------media-queries--------------//
 @media (min-width: 768px) and (max-width: 991.98px){
     .nav-head{

@@ -3,3 +3,59 @@
 p{
     font-size:0.938rem;
 }
+/*-------------------------------------
+	2. Title separators 
+-------------------------------------*/
+.wt-separator-outer {
+	overflow:hidden;
+}
+/*Separator defualt*/
+.wt-separator {
+	display:inline-block;
+	height:3px;
+	width:50px;
+	position:relative;
+}
+.wt-separator .separator-left,
+.wt-separator .separator-right {
+	position:absolute;
+	top:50%;
+	width:70px;
+	height:2px;
+	margin-top:-1px;
+}
+.wt-separator .separator-left{
+	left:-80px;
+}
+.wt-separator .separator-right{
+	right:-80px;
+}
+/*Separator liner*/
+.wt-separator.style-liner {
+	width:20px;
+	height:4px;
+}
+/*Separator square*/
+.wt-separator.style-square {
+	width:10px;
+	height:10px;
+	background-color:transparent;
+	border-width:3px;
+	border-style:solid;
+	border-color:#2d3239;
+}
+.wt-separator.style-square .separator-left,
+.wt-separator.style-square .separator-right {
+	height:3px;
+}
+.wt-separator.style-square.has-bg {
+	border-color:#fff;
+}
+/*Separator icon*/
+.wt-separator.style-icon {
+	width:30px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:18px;
+}

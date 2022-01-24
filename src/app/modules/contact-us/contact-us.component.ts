@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import * as mapboxgl from 'mapbox-gl';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-contact-us',
@@ -9,12 +11,25 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 })
 export class ContactUSComponent implements OnInit {
   contactForm!: FormGroup;
+  map: mapboxgl.Map;
+  style = 'mapbox://styles/mapbox/streets-v11';
+  lat = 27.697506332163815;
+  lng = 85.30919518227252;
 
   constructor(private formBuilder: FormBuilder) {
     this.createContactForm();
   }
   
   ngOnInit(): void {
+    (mapboxgl as any).accessToken = environment.mapbox.accessToken;
+      this.map = new mapboxgl.Map({
+        container: 'map',
+        style: this.style,
+        zoom: 13,
+        center: [this.lng, this.lat]
+    });
+    // Add map controls
+    this.map.addControl(new mapboxgl.NavigationControl());
   }
 
   createContactForm(){
