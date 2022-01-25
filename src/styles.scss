@@ -70,3 +70,20 @@ p{
 .bg-yellow{background-color:#fff000;}
 .bg-dark-blue{background-color:#161b23;}
 .bg-light-blue{background-color:#3097db;}
+
+/*-------------------------------------
+	Section Head
+-------------------------------------*/
+.section-head {
+	margin-bottom:50px;
+}
+.section-head p {
+	padding-top:10px;
+	font-size:14px;
+}
+
+.text-center.section-head p {
+	max-width:800px;
+	margin-left:auto;
+	margin-right:auto;
+}
