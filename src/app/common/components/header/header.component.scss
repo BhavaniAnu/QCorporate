@@ -96,8 +96,8 @@
 }
 @media (min-width: 576px) and (max-width: 767.98px) { 
     .nav-head{
-        top: 170px;
-        left: 15px;
+        top: 162px;
+        left: 0px;
         ul{
             margin-left: 20px;
             li a{
@@ -107,17 +107,36 @@
     }
     .navbar-collapse{
         background-color: #fff;
+        top: 54px;
+        position: absolute;
+        width: 100%;
+        left: 0px;
     }
  }
  @media (max-width: 575.98px){
     .nav-head{
-        top: 170px;
-        left: 5px;
+        top: 162px;
+        left: 0px;
+        .navbar-brand{
+            width: 50%;
+        }
         ul li a{
             color: #000;
         }
     }
+    
     .navbar-collapse{
         background-color: #fff;
+        position: absolute;
+        width: 100%;
+        top: 54px;
+        left: 0px;
+    }
+ }
+ @media (min-width: 360px) and (max-width: 640px) {
+    .service {
+        .card{
+            margin-top: 30px;
+        }
     }
  }

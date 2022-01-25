@@ -41,6 +41,9 @@ b {
 
 //-------------------media-queries--------------//
  @media (max-width: 575.98px){
+    .service{
+        margin-top: 10px;
+    }
     .about-us{
       position: relative;
       top: 6.25rem;  
@@ -58,5 +61,10 @@ b {
         padding: 5px 0px !important;
     }
  }
+ @media (min-width: 360px) and (max-width:640px){
+    .service{
+        margin-top: 40px;
+    }
+}
 
 
