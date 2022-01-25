@@ -19,16 +19,15 @@ export class ContactUSComponent implements OnInit {
 
   createContactForm(){
     this.contactForm = this.formBuilder.group({
-      fullName: [''],  
-      email: [''],
-      message: ['']
+      from_name: [''],  
+      to_name: [''],
+      message: [''],
+      // from_email: [''],
+      to_email: ['']
     });
   }
 
   onSubmit() {
-    // console.log(e, e.target as HTMLFormElement);
-    
-      // e.preventDefault();
       console.log('Your form data : ', this.contactForm.value );
       emailjs.send('service_6ji0048', 'template_er6c1si', this.contactForm.value, 'user_PXF3H4e2PM6sdvC7RUuvr')
       .then((res:EmailJSResponseStatus) => {
