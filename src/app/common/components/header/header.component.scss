@@ -1,6 +1,10 @@
 .tc-w{
     color: #fff;
 }
+.navbar-inverse {
+    background-color: #ffdd00;
+    transition: background-color 500ms linear;
+}
 .bg-w{
     background-color: #fff;
 }
@@ -40,7 +44,8 @@
 .nav-head{
     position: fixed;
     width: 100%;
-    top: 65px;
+    top: 54px;
+    height: 54px;
     z-index: 999;
     .navbar-brand{
         width: 35%;
@@ -75,10 +80,6 @@
 //         }
 //     }
 // }
-.navbar-inverse {
-    background-color: #ffdd00 !important;
-}
-
 //-------------------media-queries--------------//
 @media (min-width: 768px) and (max-width: 991.98px){
     .nav-head{

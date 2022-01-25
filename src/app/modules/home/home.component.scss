@@ -27,7 +27,17 @@ b {
         vertical-align: middle;
     }
 }
-
+.underline{
+    position: relative;
+}
+.underline::before{
+    content: "";
+    background-color: yellow;
+    width: 55px;
+    height: 3px;
+    position: absolute;
+    bottom: -3px;
+}
 
 //-------------------media-queries--------------//
  @media (max-width: 575.98px){
