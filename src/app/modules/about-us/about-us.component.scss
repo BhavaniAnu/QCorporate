@@ -1,0 +1,28 @@
+.page-header {
+    // margin-top: 140px;
+    background-image: url('../../../assets/construction-2.jpg');
+    height: 70vh;
+    background-size: cover;
+    background-position: top;
+}
+
+.section-content {
+    img {
+        max-width: 85%;
+    }
+}
+
+.section-full {
+    .font-24 { 
+        font-size:24px;
+        line-height:30px;
+    }
+    
+    .font-60 { 
+        font-size:60px;
+        line-height:66px;
+    }
+    .text-right {
+        text-align: right;
+    }
+}
