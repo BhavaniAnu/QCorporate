@@ -92,7 +92,7 @@
         <div class="row m-0 ">
             <div class="col-md-4 p-0">
                 <div class="quick-info">
-                    <a href="#" target="_blank">
+                    <a target="_blank">
                         <i class="fa fa-phone" aria-hidden="true"></i>
                         <span class="icon">01-5909519</span>
                     </a>
@@ -100,7 +100,7 @@
             </div>
             <div class="col-md-4 p-0">
                 <div class="quick-info">
-                    <a href="#" target="_blank">
+                    <a target="_blank">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                         <span class="icon">Bhotebahal, Katmandu -44600</span>
                     </a>
@@ -108,7 +108,7 @@
             </div>
             <div class="col-md-4 p-0">
                 <div class="quick-info">
-                    <a href="#" target="_blank">
+                    <a target="_blank">
                         <i class="far fa-envelope-open"></i>
                         <span class="icon">info@quickfix.com.np</span>
                     </a>
@@ -118,18 +118,21 @@
     </div>
 </div>
 <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid nav-head bhavani" (scroll)="onWindowScroll()">
-      <a class="navbar-brand fw-bold tc-w" href="#">Quick Corporate</a>
+    <div class="container-fluid nav-head second" (scroll)="onWindowScroll()">
+      <a class="navbar-brand fw-bold tc-w">Quick Construction</a>
       <button class="navbar-toggler bg-w" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active fw-bold" aria-current="page" href="#">HOME</a>
+            <a class="nav-link active fw-bold" aria-current="page" routerLink="/home">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="#">PROJECTS</a>
+            <a class="nav-link fw-bold" tabindex="-1" routerLink="/about-us">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" routerLink="/projects">PROJECTS</a>
           </li>
           <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -143,16 +146,10 @@
             </ul>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="#" tabindex="-1">SERVICES</a>
+            <a class="nav-link fw-bold" tabindex="-1" routerLink="/services">SERVICES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="#" tabindex="-1">ABOUT US</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bold" href="#" tabindex="-1">BLOG</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bold" href="#" tabindex="-1">CONTACT</a>
+            <a class="nav-link fw-bold" tabindex="-1" routerLink="/contact-us">CONTACT</a>
           </li>
         </ul>
       </div>

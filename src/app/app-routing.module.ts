@@ -6,6 +6,7 @@ import { ProjectsComponent } from './modules/projects/projects.component';
 import { ServicesComponent } from './modules/services/services.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: '',
     loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'contact-us', component: ContactUSComponent },
-  { path: 'services', component: ServicesComponent }
+  { path: 'services', component: ServicesComponent },
+  // {path: '**', component: PageNotfoundComponent},
 ];
 
 @NgModule({

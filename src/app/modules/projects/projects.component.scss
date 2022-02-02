@@ -1,0 +1,19 @@
+.page-header {
+    background-image: url('../../../assets/project-1.jpg');
+    height: 70vh;
+    background-size: cover;
+    background-position: top;
+}
+
+.project {
+    .card {
+        width: 100%;
+        height: 60%;
+    }
+    .card img {
+        // height: auto;
+        height: 65%;
+        max-height: 65%;
+        max-width: 100%;
+    }
+}

@@ -1,16 +1,22 @@
 .page-header {
     // margin-top: 140px;
-    background-image: url('../../../assets/contact-1.jpg');
-    height: 80vh;
+    background-image: url('../../../assets/contact-2.jpg');
+    height: 70vh;
     background-size: cover;
     background-position: top;
 }
 
-.icon {
-    padding-left: 15px;
-}
-
 .contact-page {
     padding-left: 300px;
+}
+
+iframe {
+    border: 0;
+    height: 375px;
+    width: 570px;
+}
+
+.is-invalid {
+    color: #bb0000;
 }
 
