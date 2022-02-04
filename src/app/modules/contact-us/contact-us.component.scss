@@ -13,9 +13,14 @@
 iframe {
     border: 0;
     height: 375px;
-    width: 570px;
+    width: 100%;
 }
-
+.details{
+    input,textarea{
+        outline: none;
+        box-shadow: none;
+    }
+}
 .is-invalid {
     color: #bb0000;
 }
