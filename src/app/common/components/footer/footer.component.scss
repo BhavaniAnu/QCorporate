@@ -32,20 +32,8 @@ img {
     padding-left: 40%;
 }
 .quick-foot{
-    width: 94%;
-    margin-left: auto;
+    width: 100%;
 }
-
-#btn-vibrate{
-    animation:vibrate 2s linear 0s infinite;
-    -moz-animation: vibrate 2s linear 0s infinite;
-    /* Firefox */
-    -webkit-animation: vibrate 2s linear 0s infinite;
-    /* Safari and Chrome */
-    -o-animation: vibrate 2s linear 0s infinite;
-    /* Opera */
-}
-
 // button.scrolltop { 
 // 	height: 55px;  
 // 	width: 55px;
@@ -72,7 +60,17 @@ img {
 // 	font-size: 24px;
 // 	line-height: 24px;
 // }
-
+.border-style::before{
+	border-color: #fff;
+	content: "";
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 10px;
+}
 .social-icons {
 	list-style:none;
 	margin-left:-3px;
@@ -85,7 +83,7 @@ img {
 }
 .social-icons li a {
 	display:block;
-	padding:3px;
+	text-decoration: none;
 }
 .social-icons.social-md {
 	font-size:18px;
@@ -185,4 +183,149 @@ img {
  .footer-links{
      display: block !important;
  }
+}
+.icon{
+	i:hover{
+		// background-color: #FFBC13;
+    	color: #FFBC13;
+	}
+}
+/*-------------------------------------
+	6. scroll top btn css
+-------------------------------------*/
+.top{
+	button{
+		display: inline-block;
+		color: yellow;
+		border-color: yellow;
+		outline: none;
+		box-shadow: none;
+	}
+button.scrolltop span{
+	display: block;
+	font-size: 24px;
+	line-height: 24px;
+}
+.relative{
+	position: relative;
+}
+// .relative i{
+// 	color: yellow;
+// }
+#btn-vibrate{
+    animation:vibrate 2s linear 0s infinite;
+    -moz-animation: vibrate 2s linear 0s infinite;
+    /* Firefox */
+    -webkit-animation: vibrate 2s linear 0s infinite;
+    /* Safari and Chrome */
+    -o-animation: vibrate 2s linear 0s infinite;
+    /* Opera */
+}
+@keyframes vibrate {
+    0% {
+        top: 0px;
+    }
+    25% {
+        top: -3px;
+    }
+    50% {
+        top: 0px;
+    }
+    75% {
+        top: 3px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+/* Firefox */
+@-moz-keyframes vibrate
+ {
+    0% {
+        top: 0px;
+    }
+    25% {
+        top: -3px;
+    }
+    50% {
+        top: 0px;
+    }
+    75% {
+        top: 3px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+/* Safari and Chrome */
+@-webkit-keyframes vibrate
+ {
+    0% {
+        top: 0px;
+    }
+    25% {
+        top: -3px;
+    }
+    50% {
+        top: 0px;
+    }
+    75% {
+        top: 3px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+/* Opera */
+@-o-keyframes vibrate
+ {
+    0% {
+        top: 0px;
+    }
+    25% {
+        top: -3px;
+    }
+    50% {
+        top: 0px;
+    }
+    75% {
+        top: 3px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@media only screen and (max-width:480px) {
+button.scroltop { 
+	font-size:7px;
+	height:30px;  
+	width: 30px;
+	line-height:16px;
+}
+button.scroltop span {
+    font-size: 10px;
+    line-height: 10px;
+}
+}
+}
+.scrolltop {
+	height: 55px;
+	width: 55px;
+	background: #161616;
+	border: 3px solid;
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	font-size: 11px;
+	line-height: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	display: none;
+	text-align: center;
+	z-index: 999;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
 }

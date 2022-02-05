@@ -50,7 +50,7 @@ p{
 	background-color:transparent;
 	border-width:3px;
 	border-style:solid;
-	border-color:#2d3239;
+	// border-color:#2d3239;
 }
 .wt-separator.style-square .separator-left,
 .wt-separator.style-square .separator-right {
@@ -143,7 +143,9 @@ p{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
+.fi:hover{
+	color:#ffbc13;
+}
 /*======================================
 43. Animate line
 ======================================*/
