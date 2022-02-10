@@ -1,30 +1,45 @@
-.page-header {
-    // margin-top: 140px;
-    background-image: url('../../../assets/construction-4.jpg');
-    height: 85vh;
-    background-size: cover;
-    background-position: top;
-}
-
 b {
-    font-weight: 900;
-    font-size: 50px;
-    color: #ffdd00;
+  font-weight: 900;
+  font-size: 50px;
+  color: #ffdd00;
+}
+.text-left {
+  text-align: left;
+}
+.about {
+  margin-top: 1.25rem;
 }
 
-.about {
-    margin-top: 1.25rem;
+.about-com-pic {
+  position: relative;
+  z-index: 1;
 }
-.carousel-item img{
-    height: 255px;
-    // width: 450px !important;
-    object-fit: cover;
-    border-radius: 20px;
+.about-com-pic:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: -10px;
+  background-color: #ffbc13;
+  z-index: -1;
 }
-.carousel-indicators button{
-    height: 10px !important;
-    width:10px !important;
-    border-radius: 50% !important;
+
+.about-com-pic img {
+  width: 100%;
+  height: 630px;
+}
+
+.carousel-item img {
+  height: 255px;
+  // width: 450px !important;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.carousel-indicators button {
+  height: 10px !important;
+  width: 10px !important;
+  border-radius: 50% !important;
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -36,61 +51,73 @@ b {
   top: 50%;
   transform: translateY(-50%);
 }
-.service{
-    .card {
-        min-height: 18.75rem;
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: table;
+
+.team {
+  .card {
+    margin: 10px 0px;
+    border-bottom: 3px solid #ffbc13;
+    img {
+      width: 100%;
+      height: 250px;
     }
-    .card-body{
-        display: table-cell;
-        vertical-align: middle;
+    .card-body {
+      height: 100px;
     }
+  }
 }
-.underline{
-    position: relative;
+
+.service {
+  .card {
+    min-height: 18.75rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: table;
+  }
+  .card-body {
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
-.underline::before{
-    content: "";
-    background-color: yellow;
-    width: 55px;
-    height: 3px;
-    position: absolute;
-    bottom: -3px;
+.underline {
+  position: relative;
+}
+.underline::before {
+  content: "";
+  background-color: yellow;
+  width: 55px;
+  height: 3px;
+  position: absolute;
+  bottom: -3px;
 }
 
 //-------------------media-queries--------------//
- @media (max-width: 575.98px){
-    .service{
-        margin-top: 10px;
-    }
-    .about-us{
-      position: relative;
-      top: 6.25rem;  
-    }
-    
- }
- @media (min-width: 320px) and (max-width:480px){
-     .service{
-         margin-top: 10px;
-     }
-     .nav-head{
-        left: 11px;
-     }
-    .home-properties{
-        padding: 5px 0px !important;
-    }
- }
- @media (min-width: 360px) and (max-width:640px){
-    .service{
-        margin-top: 40px;
-    }
+@media (max-width: 575.98px) {
+  .service {
+    margin-top: 10px;
+  }
+  .about-us {
+    position: relative;
+    top: 6.25rem;
+  }
 }
-@media (min-width: 600px) and (max-width:1024px){
-    .about-us{
-        margin-top: 80px;
-    }
+@media (min-width: 320px) and (max-width: 480px) {
+  .service {
+    margin-top: 10px;
+  }
+  .nav-head {
+    left: 11px;
+  }
+  .home-properties {
+    padding: 5px 0px !important;
+  }
 }
-
-
+@media (min-width: 360px) and (max-width: 640px) {
+  .service {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .about-us {
+    margin-top: 80px;
+  }
+}

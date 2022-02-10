@@ -1,199 +1,286 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~bootstrap/dist/css/bootstrap.min.css';
-h1,h2,h3,h4,h5,h6 {
-	font-family: 'Roboto Slab', serif;
+@import "~bootstrap/dist/css/bootstrap.min.css";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
 }
 
 * {
-	font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-p{
-    font-size:0.938rem;
+p {
+  font-size: 0.938rem;
 }
-::-webkit-scrollbar{
-	width: 10px;
+::-webkit-scrollbar {
+  width: 10px;
 }
-::-webkit-scrollbar-track{
-	background-color: --bs-bg-opacity;
-	border-radius: 50px;
+::-webkit-scrollbar-track {
+  background-color: --bs-bg-opacity;
+  border-radius: 50px;
 }
-::-webkit-scrollbar-thumb{
-	background-color:#ffdd00;
-	border-radius: 50px;
+::-webkit-scrollbar-thumb {
+  background-color: #ffdd00;
+  border-radius: 50px;
 }
 /*-------------------------------------
 	 Title separators 
 -------------------------------------*/
 .wt-separator-outer {
-	overflow:hidden;
+  overflow: hidden;
 }
 /*Separator defualt*/
 .wt-separator {
-	display:inline-block;
-	height:3px;
-	width:50px;
-	position:relative;
+  display: inline-block;
+  height: 3px;
+  width: 50px;
+  position: relative;
 }
 .wt-separator .separator-left,
 .wt-separator .separator-right {
-	position:absolute;
-	top:50%;
-	width:70px;
-	height:2px;
-	margin-top:-1px;
+  position: absolute;
+  top: 50%;
+  width: 70px;
+  height: 2px;
+  margin-top: -1px;
 }
-.wt-separator .separator-left{
-	left:-80px;
+.wt-separator .separator-left {
+  left: -80px;
 }
-.wt-separator .separator-right{
-	right:-80px;
+.wt-separator .separator-right {
+  right: -80px;
 }
 /*Separator liner*/
 .wt-separator.style-liner {
-	width:20px;
-	height:4px;
+  width: 20px;
+  height: 4px;
 }
 /*Separator square*/
 .wt-separator.style-square {
-	width:10px;
-	height:10px;
-	background-color:transparent;
-	border-width:3px;
-	border-style:solid;
-	// border-color:#2d3239;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border-width: 3px;
+  border-style: solid;
+  // border-color:#2d3239;
 }
 .wt-separator.style-square .separator-left,
 .wt-separator.style-square .separator-right {
-	height:3px;
+  height: 3px;
 }
 .wt-separator.style-square.has-bg {
-	border-color:#fff;
+  border-color: #fff;
 }
 /*Separator icon*/
 .wt-separator.style-icon {
-	width:30px;
-	height:30px;
-	line-height:30px;
-	text-align:center;
-	font-size:18px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 18px;
 }
 /*-------------------------------------
 	 background color
 -------------------------------------*/
-.bg-black-light{background-color:#212121;}
-.bg-gray{background-color:#f5f6f6;}
-.bg-gray-light{background-color:#f1f1f1;}
-.bg-gray-dark{background-color:#d3d3d3;}
-.bg-green{background-color:#a5de5c;}
-.bg-yellow{background-color:#fff000;}
-.bg-dark-blue{background-color:#161b23;}
-.bg-light-blue{background-color:#3097db;}
+.bg-black-light {
+  background-color: #212121;
+}
+.bg-gray {
+  background-color: #f5f6f6;
+}
+.bg-gray-light {
+  background-color: #f1f1f1;
+}
+.bg-gray-dark {
+  background-color: #d3d3d3;
+}
+.bg-green {
+  background-color: #a5de5c;
+}
+.bg-yellow {
+  background-color: #fff000;
+}
+.bg-dark-blue {
+  background-color: #161b23;
+}
+.bg-light-blue {
+  background-color: #3097db;
+}
 
 /*-------------------------------------
 	Section Head
 -------------------------------------*/
 .section-head {
-	margin-bottom:50px;
+  margin-bottom: 50px;
 }
 .section-head p {
-	padding-top:10px;
-	font-size:14px;
+  padding-top: 10px;
+  font-size: 14px;
 }
 
 .text-center.section-head p {
-	max-width:800px;
-	margin-left:auto;
-	margin-right:auto;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*======================================
 8. OVERLAY ( transparient box style  )
 ======================================*/
-.overlay-wraper { 
-	position:relative ;
+.overlay-wraper {
+  position: relative;
 }
-.overlay-main { 
-	position:absolute;
-	left:0;
-	top:0;
-	width:100%;
-	height:100%;
-	opacity:0.5;
+.overlay-main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
 }
-.opacity-01{opacity:0.1;}
-.opacity-02{opacity:0.2;}
-.opacity-03{opacity:0.3;}
-.opacity-04{opacity:0.4;}
-.opacity-05{opacity:0.5;}
-.opacity-06{opacity:0.6;}
-.opacity-07{opacity:0.7;}
-.opacity-08{opacity:0.8;}
-.opacity-09{opacity:0.9;}
-.overlay-light .overlay-main { 
-	opacity:0.3;
+.opacity-01 {
+  opacity: 0.1;
+}
+.opacity-02 {
+  opacity: 0.2;
+}
+.opacity-03 {
+  opacity: 0.3;
+}
+.opacity-04 {
+  opacity: 0.4;
+}
+.opacity-05 {
+  opacity: 0.5;
+}
+.opacity-06 {
+  opacity: 0.6;
+}
+.opacity-07 {
+  opacity: 0.7;
+}
+.opacity-08 {
+  opacity: 0.8;
+}
+.opacity-09 {
+  opacity: 0.9;
+}
+.overlay-light .overlay-main {
+  opacity: 0.3;
 }
 .overlay-dark .overlay-main {
-	opacity:0.9;
+  opacity: 0.9;
 }
 .overlay-wraper > .container,
 .overlay-wraper > .container-fluid,
-.overlay-wraper >  .wt-icon-box-wraper,
+.overlay-wraper > .wt-icon-box-wraper,
 .overlay-wraper > .wt-left-part,
-.overlay-wraper > .wt-right-part{ 
-	position:relative;
-	z-index:1; 
+.overlay-wraper > .wt-right-part {
+  position: relative;
+  z-index: 1;
+}
+/*-------------------------------------
+	10. Image effects 
+-------------------------------------*/
+.wt-img-effect {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+.wt-img-effect img {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+}
+/* 10.1 image-opacity */
+.wt-img-effect.opacity img:hover {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -webkit-opacity: 0.8;
+}
+/*10.2 image-zoom */
+.wt-img-effect.zoom-slow img {
+  transition: all 10s;
+  -moz-transition: all 10s;
+  -webkit-transition: all 10s;
+  -o-transition: all 10s;
+}
+.wt-img-effect.zoom-slow:hover img {
+  -moz-transform: scale(2);
+  -webkit-transform: scale(2);
+  -o-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
+}
+/*10.3 image-zoom-slow */
+.wt-img-effect.zoom:hover img {
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 /*-------------------------------------
 	3. background image
 -------------------------------------*/
-.bg-parallax { 
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+.bg-parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.fi:hover{
-	color:#ffbc13;
+.fi:hover {
+  color: #ffbc13;
 }
 /*======================================
 43. Animate line
 ======================================*/
-.animate_line{
-	position:relative;
-	z-index:0;
+.animate_line {
+  position: relative;
+  z-index: 0;
 }
 .animate_line:after,
-.animate_line:before{
-	content: "";
-	height: 4px;
-	width: 0px;  
-	position: absolute; 
-	transition: all 0.5s ease 0s; 
-	-webkit-transition: all 0.5s ease 0s; 
-	z-index: -1; 	
+.animate_line:before {
+  content: "";
+  height: 4px;
+  width: 0px;
+  position: absolute;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  z-index: -1;
 }
-.animate_line:after { 
-  left: 0; 
-  bottom: 0; 
+.animate_line:after {
+  left: 0;
+  bottom: 0;
 }
-.animate_line:before { 
-  right: 0; 
-  top: 0; 
+.animate_line:before {
+  right: 0;
+  top: 0;
 }
 .animate_line:hover:after,
-.animate_line:hover:before{ 
-	width: 50%; 
-	height:50%;
-	background: #ffbc13; 
+.animate_line:hover:before {
+  width: 50%;
+  height: 50%;
+  background: #ffbc13;
 }
-@media only screen and ( max-width:768px){
-.animate_line:after { 
-  bottom: -5px; 
-}
-.animate_line:before { 
-  top: -5px; 
-}
-	
+@media only screen and (max-width: 768px) {
+  .animate_line:after {
+    bottom: -5px;
+  }
+  .animate_line:before {
+    top: -5px;
+  }
 }
