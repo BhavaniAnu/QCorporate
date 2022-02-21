@@ -1,140 +1,109 @@
-.tc-w{
-    color: #fff;
+.tc-w {
+  color: #fff;
 }
 .navbar-inverse {
-    background-color: #ffdd00;
-    transition: background-color 500ms linear;
+  background-color: #ffc107;
+  transition: background-color 500ms linear;
 }
-.bg-w{
-    background-color: #fff;
+.bg-w {
+  background-color: #fff;
 }
-// .marginIcon {
-//     margin-left: 80px;
-//     i{
-//         color: #fff;
-//     }
-//     .icon {
-//         padding-left: 10px;
-//         color: #fff;
-//     }
-// }
-.quick{
-    background-color: black;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    .quick-info{
-        display: flex;
-        justify-content: center;
-        padding: 15px;
-        a{
-            text-decoration: none;
-            i{
-                color: #fff;
-                padding-right: 5px;
-            }
-            span{
-                color:#fff;
-            }
-        }
-
+.quick {
+  background-color: black;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  .quick-info {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    a {
+      text-decoration: none;
+      i {
+        color: #fff;
+        padding-right: 5px;
+      }
+      span {
+        color: #fff;
+      }
     }
+  }
 }
-.nav-head{
-    position: fixed;
+.nav-head {
+  position: fixed;
+  width: 100%;
+  top: 54px;
+  height: 54px;
+  z-index: 999;
+  .navbar-brand {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+  }
+  ul {
+    display: flex;
+    margin-left: 60px;
+    li a {
+      color: #fff;
+    }
+  }
+}
+
+//-------------------media-queries--------------//
+@media (min-width: 768px) and (max-width: 993px) {
+  .nav-head {
+    top: 54px;
+    ul {
+      li a {
+        color: #000;
+      }
+    }
+  }
+  .navbar-collapse {
+    background-color: #fff;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .nav-head {
+    top: 162px;
+    left: 0px;
+    ul {
+      margin-left: 20px;
+      li a {
+        color: #000;
+      }
+    }
+  }
+  .navbar-collapse {
+    background-color: #fff;
+    top: 54px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+  }
+}
+@media (max-width: 575.98px) {
+  .nav-head {
+    top: 162px;
+    left: 0px;
+    .navbar-brand {
+      width: 50%;
+    }
+    ul li a {
+      color: #000;
+    }
+  }
+
+  .navbar-collapse {
+    background-color: #fff;
+    position: absolute;
     width: 100%;
     top: 54px;
-    height: 54px;
-    z-index: 999;
-    .navbar-brand{
-        width: 35%;
-        display: flex;
-        justify-content: center;
-    }
-    ul{
-        display: flex;
-        margin-left: 60px;
-        li a{
-            color:#fff;
-        }
-    }
+    left: 0px;
+  }
 }
-
-// .second { 
-//     margin-top: 3.438rem;
-//     justify-content: center;
-    // padding-top: 10px;
-    // padding-bottom: 10px;
-    // background-color: #ffdd00;
-//     .quick{
-//         display: flex;
-//         justify-content: space-between;
-//         width: 70%;
-//     }
-// }
-// .head-items{
-//     li{
-//         a{
-//             color: #fff;
-//         }
-//     }
-// }
-//-------------------media-queries--------------//
-@media (min-width: 768px) and (max-width: 993px){
-    .nav-head{
-        top: 54px;
-        ul{
-            li a{
-                color: #000;
-            }
-        }
-    }
-    .navbar-collapse{
-        background-color: #fff;
-    }
+.nav-active {
+  background-color: #fff;
+  color: black !important;
 }
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    .nav-head{
-        top: 162px;
-        left: 0px;
-        ul{
-            margin-left: 20px;
-            li a{
-                color: #000;
-            }
-        }
-    }
-    .navbar-collapse{
-        background-color: #fff;
-        top: 54px;
-        position: absolute;
-        width: 100%;
-        left: 0px;
-    }
- }
- @media (max-width: 575.98px){
-    .nav-head{
-        top: 162px;
-        left: 0px;
-        .navbar-brand{
-            width: 50%;
-        }
-        ul li a{
-            color: #000;
-        }
-    }
-    
-    .navbar-collapse{
-        background-color: #fff;
-        position: absolute;
-        width: 100%;
-        top: 54px;
-        left: 0px;
-    }
- }
- .nav-active{
-     background-color: #fff;
-     color: black !important;
- }
-

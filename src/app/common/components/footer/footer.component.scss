@@ -1,331 +1,299 @@
 img {
-    max-width: 30%;
+  max-width: 30%;
 }
 
 .icon {
-    padding-left: 15px;
+  padding-left: 15px;
 }
 
-.constrot-strip{
-	position:relative;
-	height:15px;
-	width:100%;
-	background-color:#ffbc13;
-	background-image:url(../../../../assets/footer-strip.png);
-	background-repeat:repeat-x;
-	background-position:center top;
+.constrot-strip {
+  position: relative;
+  height: 15px;
+  width: 100%;
+  background-color: #ffc107;
+  background-image: url(../../../../assets/footer-strip.png);
+  background-repeat: repeat-x;
+  background-position: center top;
 }
 
-.overlay-wraper { 
-	position:relative ;
+.overlay-wraper {
+  position: relative;
 }
-.overlay-main { 
-	position:absolute;
-	left:0;
-	top:0;
-	width:100%;
-	height:100%;
-	opacity:0.5;
+.overlay-main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
 }
 
 .footer2 {
-    padding-left: 40%;
+  padding-left: 40%;
 }
-.quick-foot{
-    width: 100%;
+.quick-foot {
+  width: 100%;
 }
-// button.scrolltop { 
-// 	height: 55px;  
-// 	width: 55px;
-// 	background:#161616;  
-// 	border:3px solid;
-// 	position: fixed;   
-// 	right: 15px;   
-// 	bottom:15px;
-// 	font-size:11px;
-// 	line-height:16px;
-// 	font-weight:bold;
-// 	text-transform:uppercase;
-// 	margin:0; 
-// 	padding:0;    
-// 	cursor: pointer;    
-// 	display: none;    
-// 	text-align:center;  
-// 	z-index:999;
-// 	-webkit-border-radius: 50%;
-// 	border-radius: 50%;
-// }
-// button.scroltop span{
-// 	display: block;
-// 	font-size: 24px;
-// 	line-height: 24px;
-// }
-.border-style::before{
-	border-color: #fff;
-	content: "";
-    position: absolute;
-    bottom: -14px;
-    left: 0;
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin-bottom: 10px;
+.border-style::before {
+  border-color: #fff;
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-bottom: 10px;
 }
 .social-icons {
-	list-style:none;
-	margin-left:-3px;
-	margin-right:-3px;
-	font-size:12px;
+  list-style: none;
+  margin-left: -3px;
+  margin-right: -3px;
+  font-size: 12px;
 }
 .social-icons li {
-	display:inline-block;
-	text-align:center;
+  display: inline-block;
+  text-align: center;
 }
 .social-icons li a {
-	display:block;
-	text-decoration: none;
+  display: block;
+  text-decoration: none;
 }
 .social-icons.social-md {
-	font-size:18px;
+  font-size: 18px;
 }
-.social-icons.social-lg li a{
-	font-size:24px;
+.social-icons.social-lg li a {
+  font-size: 24px;
 }
-.social-icons.has-bg li a:hover{
-	color:#fff;
+.social-icons.has-bg li a:hover {
+  color: #fff;
 }
 .social-icons.social-light a {
-	color:#fff;
+  color: #fff;
 }
-.social-icons.social-light.has-bg li a:hover{
-	color:#FFBC13;
+.social-icons.social-light.has-bg li a:hover {
+  color: #ffc107;
 }
 .social-icons.social-dark a {
-	color:#777;
+  color: #777;
 }
-.social-icons.social-dark.has-bg li a:hover{
-	color:#FFBC13;
+.social-icons.social-dark.has-bg li a:hover {
+  color: #ffc107;
 }
 .social-icons.social-square a,
 .social-icons.social-radius a {
-	border:1px solid rgba(0,0,0,0.2);
-	width:24px;
-	height:24px;
-	line-height:24px;
-	padding:0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  padding: 0;
 }
 .social-icons.social-square.social-md a,
 .social-icons.social-radius.social-md a {
-	width:36px;
-	height:36px;
-	line-height:36px;
-	padding:0;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  padding: 0;
 }
-.social-icons.social-square.social-lg a ,
-.social-icons.social-radius.social-lg a{
-	width:40px;
-	height:40px;
-	line-height:40px;
-	padding:0;
+.social-icons.social-square.social-lg a,
+.social-icons.social-radius.social-lg a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
 }
 .social-icons.social-square.social-primary a,
 .social-icons.social-radius.social-primary a {
-	background-color:#FFBC13;
-	color:#FFF;
-	border:1px solid rgba(0,0,0,0.1);
+  background-color: #ffc107;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .social-icons.social-square.social-primary a:hover,
 .social-icons.social-radius.social-primary a:hover {
-	background-color:#1a1a1a;
+  background-color: #1a1a1a;
 }
 .social-icons.social-square.social-primary.has-bg a:hover,
 .social-icons.social-radius.social-primary.has-bg a:hover {
-	border:1px solid rgba(255,255,255,1);
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 .social-icons.social-square.social-dark a,
-.social-icons.social-radius.social-dark a{
-	background-color:#fff;
+.social-icons.social-radius.social-dark a {
+  background-color: #fff;
 }
 .social-icons.social-square.social-dark a:hover,
 .social-icons.social-radius.social-dark a:hover {
-	background-color:#1a1a1a;
-	color:#fff;
+  background-color: #1a1a1a;
+  color: #fff;
 }
 .social-icons.social-square.social-dark.has-bg a:hover,
 .social-icons.social-radius.social-dark.has-bg a:hover {
-	border:1px solid #FFBC13;	
+  border: 1px solid #ffc107;
 }
 .social-icons.social-square.social-darkest a,
-.social-icons.social-radius.social-darkest a{
-	border:1px solid #4a4c4c;
+.social-icons.social-radius.social-darkest a {
+  border: 1px solid #4a4c4c;
 }
 .social-icons.social-darkest a {
-	color: #454747;
+  color: #454747;
 }
 .social-icons.social-square.social-darkest a:hover,
-.social-icons.social-radius.social-darkest a:hover{
-	background-color:#FFBC13;
-	color:#4a4c4c;
+.social-icons.social-radius.social-darkest a:hover {
+  background-color: #ffc107;
+  color: #4a4c4c;
 }
 .social-icons.social-radius a {
-	-webkit-border-radius: 100px;
-	-moz-border-radius:100px;
-	border-radius: 100px;
-} 
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
 .social-icons.social-square.social-dark.white-border a,
-.social-icons.social-radius.social-dark.white-border a{
-	background:none;
-	color:#fff;
-	border:1px solid rgba(255,255,255,1);
+.social-icons.social-radius.social-dark.white-border a {
+  background: none;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 
-@media (max-width: 575.98px){ 
- .footer-links{
-     display: block !important;
- }
+@media (max-width: 575.98px) {
+  .footer-links {
+    display: block !important;
+  }
 }
-.icon{
-	i:hover{
-		// background-color: #FFBC13;
-    	color: #FFBC13;
-	}
+.icon {
+  i:hover {
+    // background-color: #FFBC13;
+    color: #ffc107;
+  }
 }
 /*-------------------------------------
 	6. scroll top btn css
 -------------------------------------*/
-.top{
-	button{
-		display: inline-block;
-		color: yellow;
-		border-color: yellow;
-		outline: none;
-		box-shadow: none;
-	}
-button.scrolltop span{
-	display: block;
-	font-size: 24px;
-	line-height: 24px;
-}
-.relative{
-	position: relative;
-}
-// .relative i{
-// 	color: yellow;
-// }
-#btn-vibrate{
-    animation:vibrate 2s linear 0s infinite;
+.top {
+  button {
+    display: inline-block;
+    color: #ffc107;
+    border-color: #ffc107;
+    outline: none;
+    box-shadow: none;
+  }
+  button.scrolltop span {
+    display: block;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .relative {
+    position: relative;
+  }
+  #btn-vibrate {
+    animation: vibrate 2s linear 0s infinite;
     -moz-animation: vibrate 2s linear 0s infinite;
     /* Firefox */
     -webkit-animation: vibrate 2s linear 0s infinite;
     /* Safari and Chrome */
     -o-animation: vibrate 2s linear 0s infinite;
     /* Opera */
-}
-@keyframes vibrate {
+  }
+  @keyframes vibrate {
     0% {
-        top: 0px;
+      top: 0px;
     }
     25% {
-        top: -3px;
+      top: -3px;
     }
     50% {
-        top: 0px;
+      top: 0px;
     }
     75% {
-        top: 3px;
+      top: 3px;
     }
     100% {
-        top: 0px;
+      top: 0px;
     }
-}
-/* Firefox */
-@-moz-keyframes vibrate
- {
+  }
+  /* Firefox */
+  @-moz-keyframes vibrate {
     0% {
-        top: 0px;
+      top: 0px;
     }
     25% {
-        top: -3px;
+      top: -3px;
     }
     50% {
-        top: 0px;
+      top: 0px;
     }
     75% {
-        top: 3px;
+      top: 3px;
     }
     100% {
-        top: 0px;
+      top: 0px;
     }
-}
-/* Safari and Chrome */
-@-webkit-keyframes vibrate
- {
+  }
+  /* Safari and Chrome */
+  @-webkit-keyframes vibrate {
     0% {
-        top: 0px;
+      top: 0px;
     }
     25% {
-        top: -3px;
+      top: -3px;
     }
     50% {
-        top: 0px;
+      top: 0px;
     }
     75% {
-        top: 3px;
+      top: 3px;
     }
     100% {
-        top: 0px;
+      top: 0px;
     }
-}
-/* Opera */
-@-o-keyframes vibrate
- {
+  }
+  /* Opera */
+  @-o-keyframes vibrate {
     0% {
-        top: 0px;
+      top: 0px;
     }
     25% {
-        top: -3px;
+      top: -3px;
     }
     50% {
-        top: 0px;
+      top: 0px;
     }
     75% {
-        top: 3px;
+      top: 3px;
     }
     100% {
-        top: 0px;
+      top: 0px;
     }
-}
-@media only screen and (max-width:480px) {
-button.scroltop { 
-	font-size:7px;
-	height:30px;  
-	width: 30px;
-	line-height:16px;
-}
-button.scroltop span {
-    font-size: 10px;
-    line-height: 10px;
-}
-}
+  }
+  @media only screen and (max-width: 480px) {
+    button.scroltop {
+      font-size: 7px;
+      height: 30px;
+      width: 30px;
+      line-height: 16px;
+    }
+    button.scroltop span {
+      font-size: 10px;
+      line-height: 10px;
+    }
+  }
 }
 .scrolltop {
-	height: 55px;
-	width: 55px;
-	background: #161616;
-	border: 3px solid;
-	position: fixed;
-	right: 15px;
-	bottom: 15px;
-	font-size: 11px;
-	line-height: 16px;
-	font-weight: bold;
-	text-transform: uppercase;
-	margin: 0;
-	padding: 0;
-	cursor: pointer;
-	display: none;
-	text-align: center;
-	z-index: 999;
-	-webkit-border-radius: 50%;
-	border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  background: #161616;
+  border: 3px solid;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  display: none;
+  text-align: center;
+  z-index: 999;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
