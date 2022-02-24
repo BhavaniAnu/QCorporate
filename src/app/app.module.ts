@@ -10,6 +10,7 @@ import { ServicesComponent } from './modules/services/services.component';
 import { AboutUsComponent } from './modules/about-us/about-us.component';
 import { ContactUSComponent } from './modules/contact-us/contact-us.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { GalleryComponent } from './modules/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ProjectsComponent,
     ServicesComponent,
     AboutUsComponent,
-    ContactUSComponent
+    ContactUSComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
