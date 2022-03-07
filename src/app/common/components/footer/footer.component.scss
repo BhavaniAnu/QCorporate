@@ -297,3 +297,17 @@ img {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
+@media (max-width: 575.98px) {
+  .icon-1{
+    i{
+      display: block;
+    }
+    .icon{
+      padding: 0;
+    }
+  }
+  .help{
+    justify-content: flex-start !important;
+  }
+  
+ }
