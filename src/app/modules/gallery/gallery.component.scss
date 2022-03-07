@@ -40,37 +40,38 @@ h1,h2,h3{
             animation: animate 4s linear infinite;
         }
     }
-    h3{
-        height: 100%;
-        background-color: rgb(228, 228, 228);
-        line-height: 60px;
-        padding: 0px 50px;
-        color: white;
-    }
     .top-content{
         background-color: rgb(243,243,243);
         border-radius: 5px;
         box-shadow: 3px 3px 5px lightgray;
-        width: 90%;
+        width: 100%;
+        height: 100% !important;
         margin: 0 auto 20px auto;
         height: 60px;
         display: flex;
         align-items: center;
+        h3{
+            // height: 100%;
+            background-color: rgb(228, 228, 228);
+            // line-height: 60px;
+            // padding: 0px 50px;
+            color: white;
+        }   
     }
-    label{
-        display: inline-block;
-        height: 100%;
-        padding: 0 5px;
-        margin: 0 20px;
-        line-height: 60px;
-        font-size: 18px;
-        color: gray;
-        cursor: pointer;
-        transition: color .5s;
-        &:hover{
-            color: black;
-        }
-    }
+    // label{
+    //     display: inline-block;
+    //     height: 100%;
+    //     padding: 0 5px;
+    //     margin: 0 20px;
+    //     line-height: 60px;
+    //     font-size: 18px;
+    //     color: gray;
+    //     cursor: pointer;
+    //     transition: color .5s;
+    //     &:hover{
+    //         color: black;
+    //     }
+    // }
     .photo-gallery{
         width: 90%;
         margin: auto;
