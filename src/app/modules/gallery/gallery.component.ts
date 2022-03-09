@@ -7,7 +7,7 @@ import { ImageService } from '../image/shared/image.service';
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent implements OnChanges {
-  @Input() filterBy?: string = 'all'
+  @Input() filterBy?: any = 'all'
 	visibleImages: any[] = [];
   constructor(private imageService: ImageService) {
     this.visibleImages = this.imageService.getImages();
