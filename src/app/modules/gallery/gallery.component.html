@@ -6,9 +6,9 @@
       </div>
     </div>
   </div>
-<div class="col-md-12 col-sm-12 col-xs-12 col-xl-12 p-0 photo my-3">
+<!-- <div class="col-md-12 col-sm-12 col-xs-12 col-xl-12 p-0 photo my-3"> -->
     <!-- <input type="radio" name="photos" id="check1" checked>  -->
-    <input type="radio" name="photos" id="check2" checked>
+    <!-- <input type="radio" name="photos" id="check2" checked>
     <input type="radio" name="photos" id="check3">
     <input type="radio" name="photos" id="check4">   
     <div class="container">
@@ -22,16 +22,16 @@
                         </h3>
                     </div>
                     <div class="col-md-9 p-0 px-3">
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between"> -->
                             <!-- <label for="check1">All photos</label> -->
-                            <label for="check2">Family photos</label>
+                            <!-- <label for="check2">Family photos</label>
                             <label for="check3">Child photos</label>
                             <label for="check4">Visited photos</label>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- <div class="col-md-12 p-0">
                 <div class="row m-0 photo-gallery">
                     <div class="col-md-3 p-0">
@@ -97,7 +97,7 @@
                 </div>
             
         </div> -->
-        <div class="photo-gallery">
+        <!-- <div class="photo-gallery">
             <div class="pic place">
                 <img src="../../../assets/construction-1.jpg">
             </div>
@@ -134,9 +134,9 @@
             <div class="pic child">
                 <img src="../../../assets/construction-5.jpg">
             </div>
-        </div>
-    </div>
-</div>
+        </div> -->
+    <!-- </div>
+</div> -->
 
 <!-- <div class="section-head text-center mt-5">
     <h2 class="text-uppercase">OUR GALLERY</h2>
@@ -225,3 +225,16 @@
         </div>
     </div>
 </div> -->
+<div class="row">
+	<button class="btn btn-lg btn-info" [class.active]="filterBy=='all'" (click)="filterBy='all'">All</button>
+	<button class="btn btn-lg btn-info" [class.active]="filterBy=='boats'" (click)="filterBy='boats'">Boats</button>
+	<button class="btn btn-lg btn-info" [class.active]="filterBy=='camping'" (click)="filterBy='camping'">Camping</button>
+	<button class="btn btn-lg btn-info" [class.active]="filterBy=='library'" (click)="filterBy='library'">Library</button>
+	<ul class="thumbnailsList">
+		<li *ngFor="let image of visibleImages">
+			<a [routerLink] = "['/image', image.id]">
+				<img src="{{image.url}}" class="tn" width="200" height="160">
+			</a>
+		</li>
+	</ul>
+</div>

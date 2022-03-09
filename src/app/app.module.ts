@@ -11,6 +11,9 @@ import { AboutUsComponent } from './modules/about-us/about-us.component';
 import { ContactUSComponent } from './modules/contact-us/contact-us.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GalleryComponent } from './modules/gallery/gallery.component';
+import { ImageComponent } from './modules/image/image.component';
+import { ImageFilterPipe } from './modules/image/shared/filter.pipe';
+import { ImageService } from './modules/image/shared/image.service';
 
 @NgModule({
   declarations: [
@@ -20,8 +23,10 @@ import { GalleryComponent } from './modules/gallery/gallery.component';
     ProjectsComponent,
     ServicesComponent,
     AboutUsComponent,
+    ImageFilterPipe,
     ContactUSComponent,
-    GalleryComponent
+    GalleryComponent,
+    ImageComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +34,7 @@ import { GalleryComponent } from './modules/gallery/gallery.component';
     ReactiveFormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ImageService, ImageFilterPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
