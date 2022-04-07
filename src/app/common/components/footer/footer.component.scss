@@ -160,7 +160,6 @@ img {
 }
 .icon {
   i:hover {
-    // background-color: #FFBC13;
     color: #ffc107;
   }
 }
@@ -298,16 +297,15 @@ img {
   border-radius: 50%;
 }
 @media (max-width: 575.98px) {
-  .icon-1{
-    i{
+  .icon-1 {
+    i {
       display: block;
     }
-    .icon{
+    .icon {
       padding: 0;
     }
   }
-  .help{
+  .help {
     justify-content: flex-start !important;
   }
-  
- }
+}

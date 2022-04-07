@@ -11,21 +11,23 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: '',
-    loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)
+    loadChildren: () =>
+      import('./modules/home/home.module').then((m) => m.HomeModule),
   },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'contact-us', component: ContactUSComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'image/:id', component: ImageComponent },
-  { path: 'gallery', component: GalleryComponent }
-  // {path: '**', component: PageNotfoundComponent},
+  { path: 'gallery', component: GalleryComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { 
-    preloadingStrategy: PreloadAllModules
-  })],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(routes, {
+      preloadingStrategy: PreloadAllModules,
+    }),
+  ],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
