@@ -51,6 +51,23 @@ export class ContactUSComponent implements OnInit {
     if (this.contactForm.invalid) {
       return;
     }
+    emailjs
+      .send(
+        'service_9j761pl',
+        'template_7zezfgf',
+        this.contactForm.value,
+        '7tJdX03Eeib6byJ6E'
+      )
+      .then(
+        (res: EmailJSResponseStatus) => {
+          console.log('success', res);
+          this.submitted = false;
+          this.contactForm.reset();
+        },
+        (err) => {
+          console.log(err);
+        }
+      );
     this.contactForm.reset();
     this.submitted = false;
   }
