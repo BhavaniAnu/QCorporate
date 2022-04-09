@@ -5,18 +5,16 @@ import { ImageService } from './shared/image.service';
 @Component({
   selector: 'app-image',
   templateUrl: './image.component.html',
-  styleUrls: ['./image.component.scss']
+  styleUrls: ['./image.component.scss'],
 })
 export class ImageComponent implements OnInit {
-  image:any
-  constructor(private imageService: ImageService, private route: ActivatedRoute) { }
-  
-  ngOnInit(){
-    this.image = this.imageService.getImage(
-			+this.route.snapshot.params['id']
-		)
-    console.log(this.image)
-  }
+  image: any;
+  constructor(
+    private imageService: ImageService,
+    private route: ActivatedRoute
+  ) {}
 
+  ngOnInit() {
+    this.image = this.imageService.getImage(+this.route.snapshot.params['id']);
+  }
 }
- 

@@ -47,7 +47,6 @@ export class ContactUSComponent implements OnInit {
 
   onSubmit() {
     this.submitted = true;
-    console.log('Your form data : ', this.contactForm.value);
     if (this.contactForm.invalid) {
       return;
     }
@@ -60,7 +59,6 @@ export class ContactUSComponent implements OnInit {
       )
       .then(
         (res: EmailJSResponseStatus) => {
-          console.log('success', res);
           this.submitted = false;
           this.contactForm.reset();
         },
